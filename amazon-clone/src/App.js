@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // component imports
 import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/checkout">
+            <Header />
             <h1>Checkout Page</h1>
           </Route>
           <Route path="/login">
@@ -18,7 +20,7 @@ function App() {
           </Route>
           <Route path="/">
             <Header />
-            <h1>Home Page</h1>
+            <Home />
           </Route>
         </Switch>
       </div>
