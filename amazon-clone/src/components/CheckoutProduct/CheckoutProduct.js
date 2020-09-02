@@ -32,7 +32,7 @@ function CheckoutProduct({id, title, price, rating, image}) {
                         Array(rating)
                         .fill()
                         .map((_) => (
-                            <p>:star</p>
+                            <p>⭐</p>
                         ))}
                 </div>
 
